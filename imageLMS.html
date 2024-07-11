@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listening</title>
+  </head>
+  <body>
+ <!-- 
+        pada bagian Image terdapat 7 topic dan total 17 sub topic
+        1. Pengenalan
+        2. Image Recognition sederhana
+        3. Blok Image Recognition Lanjutan
+        4. Keuntungan Image Recognition
+        5. Computer Vision
+        6. Project
+        Quiz
+
+    
+    -->
+
+    <h3><strong>Pengenalan</strong></h3>
+    <p>
+      Tahukah kamu, sebuah kamera yang terhubung ke komputer dapat mengirimkan data warna dari setiap piksel dalam sebuah gambar? Nantinya deskripsi dari data tersebut dapat dikirim ke sebuah layanan yaitu pengenalan gambar atau kita sebut
+      dengan <i>Image Recognition. Image Recognition</i> adalah kemampuan komputer untuk mengidentifikasi dan mengklasifikasi suatu deskripsi data.
+    </p>
+    <a style="display: block; text-align: center"><img src="https://i.imgur.com/Aqzbqsq.jpg" style="width: 39mm; height: auto" /></a>
+    <p>Dengan <i>Image Recognition,</i> ada banyak deskripsi yang bisa dipindai: tag-tag deskriptif, caption (judul), warna dominan, lokasi wajah dan bagian-bagian wajah jika ada, entitas terkenal, teks tulisan tangan, dan logo.</p>
+    <p>
+      Dalam beberapa tahun terakhir, telah terjadi kemajuan luar biasa dalam <i>Computer Vision.</i> Ada sistem kinerja tinggi untuk mengidentifikasi objek, mengenali wajah, menafsirkan sketsa, dan menggunakan gambar medis untuk membantu
+      diagnosis.
+    </p>
+    <br />
+    <h3><strong>API Keys yang Dibutuhkan</strong></h3>
+    <p>
+      Untuk saat ini belum ada browser yang mendukung <i>Image Recognition.</i> Jika teman-teman menginginkan untuk mengakses layanan <i>Image Recognition</i> dari perusahaan seperti Google atau Microsoft, kita perlu membuka akun. Akun ini
+      gratis dan menyediakan beberapa tingkat penggunaan yang tidak berbayar. Microsoft mengizinkan 5000 kueri per bulan, dan Google 1000 per bulan.
+    </p>
+    <br />
+    <h3><strong>Image Recognition Sederhana</strong></h3>
+    <p>
+      Selanjutnya kita akan belajar tentang blok yang termasuk ke dalam <i>image recognition.</i> Kita akan menggunakan blok yang dapat mengambil mengambil gambar, mengirimkannya ke penyedia server <i>AI Cloud,</i> menunggu respon, dan
+      kemudian melaporkan daftar label-label foto. Daftar ini diurutkan berdasarkan seberapa yakin penyedia visi bahwa label tersebut cocok dengan gambar.
+    </p>
+    <a style="display: block; text-align: center"><img src="https://i.imgur.com/4QAFfYJ.jpg" style="width: 8cm; height: auto" /></a>
+    <iframe
+      src="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20labels%20reporter&editMode"
+      scrolling="no"
+      full_screen="true"
+      project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml"
+      style="width: 400px; height: 300px"
+    ></iframe>
+    <p><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20labels%20reporter&amp;editMode">TRY IT</a></p>
+    <br />
+    <h3><strong>Menampilkan Gambar yang Dikirim untuk Aplikasi</strong></h3>
+    <p>
+      Setelah mengetahui blok sederhana <i>Image Recognition,</i> ada juga blok <i>"show current photo".</i> Blok ini akan menampilkan gambar terbaru yang dikirim ke layanan visi AI tertentu sebagai latar belakang panggung Snap!. Untuk
+      mencobanya, pertama-tama dapatkan beberapa label dari layanan visi. Anda juga dapat menggunakan blok <i>"use camera to create costume"</i> untuk mengambil gambar baru dan menambahkannya sebagai kostum ke <i>sprite</i> saat ini.
+    </p>
+    <iframe
+      src="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20labels%20reporter%20and%20show%20photo&editMode"
+      scrolling="no"
+      full_screen="true"
+      project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml"
+      style="width: 400px; height: 300px"
+    ></iframe>
+    <p><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20labels%20reporter%20and%20show%20photo&amp;editMode">TRY IT</a></p>
+    <br />
+    <h3><strong>Contoh Program yang Menggabungkan Image Recognition dan Speech Recognition serta outputnya</strong></h3>
+    <p>
+      Sebagai ilustrasi, kamu ingin melakukan percobaan dengan memberikan perintah secara lisan untuk melakukan <i>Image Recognition.</i> Kamu mengucapkan perintah seperti: "Ceritakan padaku Google apa yang kamu lihat?" dan "Apa yang kamu
+      lihat Microsoft?". Ketika mendengar salah satu kata atau seluruh kata dalam kalimat tersebut, layanan <i>Speech Recognition</i> akan mulai bekerja dan bekerja sama dengan layanan <i>Image Recognition</i> akan merespon dan mulai
+      melakukan pemindaian berdasarkan perintah yang diucapkan.
+    </p>
+    <p>Catatan: disarankan untuk mempelajari <i>Course Speech Recognition</i> agar lebih memahami bagian ini</p>
+    <iframe
+      src="https://ecraft2learn.github.io/ai/snap/snap.html?project=camera,%20listen,%20and%20speak%20no%20keys#introduction"
+      scrolling="no"
+      full_screen="true"
+      project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml"
+      style="width: 400px; height: 300px"
+    ></iframe>
+    <p><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=camera,%20listen,%20and%20speak%20no%20keys#introduction">TRY IT</a></p>
+    <br />
+    <h3><strong>Blok Image Recognition Lanjutan</strong></h3>
+    <p>
+      <i>Image Recognition</i> dapat melakukan lebih dari hanya memberi label pada gambar. Beberapa dapat mendeteksi dan menemukan lokasi wajah, memperkirakan usia dan jenis kelamin orang tersebut, mengenali landmark dan logo, serta
+      mengenali karakter dalam teks tulisan tangan atau yang dipindai. Dalam membuat blok Snap!, layanan yang berbeda memiliki kemampuan dan struktur tanggapan yang berbeda-beda.
+    </p>
+    <br />
+    <h3><strong>Mendapatkan Properti Gambar</strong></h3>
+    <p>
+      Blok <i>Recognize new photo</i> mengatasi masalah ini dengan melaporkan struktur data yang menangkap seluruh respons dari layanan visi. Ini adalah daftar Snap! yang berisi daftar yang berisi lebih banyak data yang mungkin berupa teks
+      untuk label, angka untuk skor kepercayaan, dan bahkan lebih banyak daftar untuk data yang kompleks. Anda dapat mengklik dua kali ikon <img src="https://i.imgur.com/HP3NeUp.jpg" /> untuk membuka daftar dalam ikon daftar untuk
+      mengeksplorasi struktur lebih dalam.
+    </p>
+    <p>
+      Blok <i>"Current image property"</i> menerima argumen yang menjelaskan bagian dari struktur respons yang harus dilaporkan. Misalnya, Microsoft menawarkan keterangan yang mungkin ditemukan dengan mengikuti jalur
+      <i>"description captions text".</i> Blok umum yang berguna didefinisikan yang menggunakan blok <i>"Current image property"</i> secara internal untuk mendapatkan label dan skor kepercayaan label untuk masing-masing penyedia layanan
+      visi yang didukung. Perlu dicatat bahwa setelah respons diterima dari salah satu layanan AI, respons tersebut disimpan sehingga panggilan ke <i>"Current image property"</i> menggunakan respons terbaru daripada meminta yang baru. Hal
+      ini karena sebuah proyek mungkin perlu mengakses beberapa bagian dari sebuah respons.
+    </p>
+    <p>
+      Setelah menjalankan blok <i>"Recognize new photo"</i> Anda harus memilih penyedia cloud AI yang sama (saat ini Google atau Microsoft) saat menjalankan blok <i>"Current image property".</i> Argumen kedua bisa berupa string atau daftar
+      <i>string</i> yang menentukan informasi apa yang diinginkan dari pengenalan gambar. Setiap penyedia <i>AI Cloud</i> mendukung properti gambar yang berbeda:
+    </p>
+    <ul>
+      <li>Google. Mendukung properti yang berupa daftar dalam bentuk <i>[labelAnnotations description], [labelAnnotations score],</i> dan <i>[imagePropertiesAnnotation dominantColors colors].</i></li>
+      <li>Microsoft. Mendukung properti yang berupa daftar dalam bentuk <i>[Categories name], [Categories score], [Description captions text], [Description tags], Faces, [Tags name],</i> dan <i>[Tags confidence].</i></li>
+    </ul>
+    <p>Ayo latihan! Kenali sebuah gambar dan kemudian gunakan blok <i>Current image property</i> untuk melihat jenis deskripsi apa yang disediakan oleh layanan tersebut. Bagaimana masing-masing deskripsi ini dapat berguna?</p>
+    <iframe
+      src="https://ecraft2learn.github.io/ai/snap/snap.html?project=recognize%20new%20photo&editMode"
+      scrolling="no"
+      full_screen="true"
+      project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml"
+      style="width: 400px; height: 300px"
+    ></iframe>
+    <p><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=recognize%20new%20photo&editMode">TRY IT</a></p>
+    <p>
+      Blok reporter <i>"Recognize new photo"</i> diimplementasikan menggunakan blok <i>"Ask &lt;provider&gt; to say what is sees".</i> Blok ini tidak menunggu respons, melainkan menjalankan blok pengguna saat respons diterima. Ini tidak
+      sepraktis 'Kenali foto baru' tetapi dapat mendukung penggunaan yang lebih kompleks.
+    </p>
+    <iframe
+      src="https://ecraft2learn.github.io/ai/snap/snap.html?project=recognize%20asynchronous&editMode"
+      scrolling="no"
+      full_screen="true"
+      project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml"
+      style="width: 400px; height: 300px"
+    ></iframe>
+    <p><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=recognize%20asynchronous&editMode">TRY IT</a></p>
+    <br />
+    <h3><b>Cara Menyediakan API Keys</b></h3>
+    <p>Pada bagian ini, kita menggunakan <i>API Keys</i> yang disediakan di area teks di atasnya. Saat membangun proyek, ada dua cara untuk menyediakan <i>key</i> atau kunci tersebut:</p>
+    <ul>
+      <li>
+        Tambahkan informasi tambahan ke URL halaman. Misal menambahkan <i>&Google image key=... atau &Microsoft image key=...</i> ke URL proyek yang dibagikan akan menyediakan kunci (setelah "..." diganti dengan kunci yang sebenarnya). Kamu
+        dapat menyediakan hanya satu kunci jika Anda tidak tertarik membandingkan respons dari penyedia layanan AI yang berbeda. <i>Refresh</i> halaman setelah menambahkan kunci.
+      </li>
+      <li>
+        Edit satu atau kedua variabel <i>global Google vision key</i> atau <i>Microsoft vision key.</i> Perhatikan bahwa variabel-variabel ini dideklarasikan sebagai sementara sehingga tidak akan disetel jika kalian menyimpan dan memuat
+        proyek.
+      </li>
+    </ul>
+    <p>
+      Karena semua layanan <i>cloud AI</i> adalah layanan komersial yang apabila penggunaannya terhitung berat bisa menjadi mahal, sebaiknya setiap dari kita memiliki akun sendiri dan meminimalkan berbagi kunci. Namun sebenarnya Ini
+      bertentangan dengan Scratch dan Snap! Yang sangat mudah untuk berbagi proyek seseorang dengan komunitas yang lebih luas. Dengan menambahkan kunci ke URL menyelesaikan masalah ini jika seseorang berhati-hati untuk menjaga URL dengan
+      kunci tetap pribadi dan membagikan versi tanpa kunci.
+    </p>
+    <br />
+    <h3><b>Keuntungan dari Image Recognition</b></h3>
+    <p>
+      Menurut Wikipedia, mata makhluk hidup telah berevolusi secara independen antara 50 dan 100 kali sejak hewan pertama kali muncul. Apabila kita kaitkan dengan teknologi, penglihatan komputer memungkinkan sebuah robot untuk melihat
+      dengan baik, mobil yang dapat melakukan <i>self-driving,</i> dan juga dapat menjadi bantuan untuk beberapa pekerjaan seperti dokter, polisi, pelatih olahraga, petani, militer, dan lainnya.
+    </p>
+
+    <h3><strong>Bahaya Image Recognition</strong></h3>
+    <p>
+      Seperti kebanyakan teknologi AI lainnya, <i>Image Recognition</i> ini mungkin akan mengambil alih banyak pekerjaan atau mengurangi privasi kita karena membuatnya jauh lebih mudah untuk melacak pergerakan dan aktivitas orang. Selain
+      itu, teknologi ini juga dapat memungkinkan pembuatan senjata yang digunakan dalam peperangan.
+    </p>
+    <p>
+      Bahaya lainnya adalah baik secara sengaja atau tidak sengaja, data yang digunakan untuk melatih sistem pembelajaran mesin mungkin mengandung bias. Berikut adalah video pendek yang bagus tentang bias dan pembelajaran mesin yang
+      diterbitkan oleh Google.
+    </p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/59bMh59JQDo?si=ymohEnAUhmzcL2P1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <h3><strong>Cara Kerja Computer Vision</strong></h3>
+    <p>
+      Seperti yang sudah disampaikan di bagian pengenalan, <i>Image Recognition</i> dimulai dengan piksel-piksel. Setiap piksel adalah angka (untuk tingkat keabuan) atau tiga angka (untuk komponen merah, hijau, dan biru) yang sesuai dengan
+      bagian kecil dari sebuah gambar. Ada dua pendekatan utama dalam memproses gambar:
+    </p>
+    <ol>
+      <li>Pendekatan dengan urutan langkah-langkah pemrosesan terprogram untuk menemukan tepi, menentukan tekstur, mengidentifikasi objek, dll.</li>
+      <li>Pendekatan dengan sebuah <i>machine learning system</i></li>
+    </ol>
+    <p>
+      Sebagian besar kemajuan telah terjadi dengan <i>Machine Learning Systems.</i> Ada banyak pekerjaan yang bisa dilakukan dengan Machine Learning. Contohnya adalah untuk beberapa pekerjaan seperti mendeteksi kanker paru-paru dari
+      sinar-X, <i>Machine Learning</i> telah melampaui kemampuan para ahli.
+    </p>
+    <a style="display: block; text-align: center"><img src="https://i.imgur.com/NcWd7ip.jpg" style="width: 56mm; height: auto" /></a>
+    <p>
+      <i>A neural net</i> adalah program yang terinspirasi dari bagaimana <i>neuron</i> dalam otak hewan dan manusia bekerja. Hal ini dapat dilatih untuk mengidentifikasi gambar. Pada kasus paling umum, <i>neural net</i> dilatih dengan
+      ribuan atau jutaan gambar yang sudah diberi label. Ketika diberikan gambar baru, <i>neural net</i> menghitung label-label yang paling mungkin. Beberapa tugas diskriminasi visual yang mudah dapat diatasi dengan melatih hanya seratus
+      atau kurang gambar.
+    </p>
+    <!-- gambar neural net disini (????) -->
+    <p>
+      Pada suatu tingkat, neural net dapat mengenali elemen-elemen dalam suatu gambar. Para peneliti telah membangun perangkat lunak yang menentukan gambar mana yang menghasilkan respons terbesar dari berbagai lapisan. Alat interaktif yang
+      sangat bagus untuk menjelajahi respons berbagai bagian dari jaringan neural adalah OpenAI Microscope.
+    </p>
+    <p>
+      Pada suatu tingkat, <i>neural net</i> dapat mengenali element-element yang terdapat dalam suatu gambar. Para peneliti telah membangun perangkat lunak yang menentukan gambar mana yang menghasilkan respons terbesar dari berbagai
+      lapisan. Alat interaktif yang sangat bagus untuk menjelajahi respons berbagai bagian dari jaringan <i>neural</i> adalah <i>OpenAI Microscope.</i>
+    </p>
+    <br />
+    <h3><strong>Layanan Video Recognition</strong></h3>
+    <p>
+      Beberapa penyedia layanan AI cloud seperti Google dapat menerima saluran video dan menghasilkan label. Layanan ini juga dapat mendeteksi perubahan adegan. Layanan ini bisa mahal, namun Google akan menganalisis 1000 menit video per
+      bulan tanpa biaya. Namun perlu diketahui saat ini, belum ada blok Snap! yang mendukung input video.
+    </p>
+    <br />
+    <h3><strong>Ide Projek yang Memanfaatkan Image Recognition</strong></h3>
+    <p>
+      Menambahkan <i>Image Recognition</i> ke proyek robotika dapat membuat robot berperilaku jauh lebih cerdas. Robot dapat menuju tujuan dan menghindari objek tertentu. Contoh sederhana ialah robot yang diberitahu untuk bergerak ke X
+      (misalkan X berupa "bola merah", "truk mainan", "seseorang", atau apa pun). Robot dimulai dengan mengirimkan gambar kamera saat ini untuk dikenali. Jika deskripsi yang dikembalikan cocok dengan X, maka bergerak maju beberapa langkah
+      (dengan asumsi kamera dipasang menghadap ke depan). Jika tidak, maka berputar sedikit dan coba lagi. Ulangi sampai X tercapai.
+    </p>
+    <p>Untuk proyek yang menggunakan kamera yang tidak dapat bergerak, ada banyak kemungkinan:</p>
+    <ul>
+      <li>Melakukan percakapan sederhana tentang apa yang menurutnya dilihatnya.</li>
+      <li>
+        Merespons apa yang dilihatnya. Misalnya, mengatakan "sangat lucu" ketika deskripsi mencakup kata-kata seperti "anak kucing" atau "anak anjing" tetapi mengatakan "Sangat menakutkan!" ketika deskripsi adalah mainan singa atau
+        serigala.
+      </li>
+      <li>Ketika wajah dikenali, lokasi dan lokasi bagian-bagian wajah termasuk dalam respons. Aplikasi kemudian dapat mengetahui di mana menempatkan kacamata, kumis, dll. pada gambar.</li>
+      <li>Dan ribuan kemungkinan lainnya.</li>
+    </ul>
+
+    <h3><strong>umber Tambahan</strong></h3>
+    <p>
+      <i>Google</i> dan <i>Microsoft</i> mendokumentasikan layanan visi AI mereka. Ada banyak layanan visi lainnya, lihat contohnya halaman perbandingan layanan <i>Image Recognition</i> ini. Halaman <i>Wikipedia</i> tentang visi komputer
+      sangat komprehensif. Ada banyak MOOCs tentang visi komputer dan pembelajaran mesin untuk pengenalan gambar. <i>Distill</i> adalah jurnal ilmiah yang berusaha menjelaskan secara jelas topik-topik pembelajaran mesin yang kompleks.
+      Sebuah artikel <i>Distill</i> adalah deskripsi mendalam tentang bagaimana jaringan saraf melakukan pengenalan gambar. Ringkasan untuk audiens umum dari artikel tersebut ditulis oleh New York Times. <i>Codecademy</i> memiliki wawancara
+      yang baik dengan seorang ilmuwan data tentang pembelajaran mesin.
+    </p>
+    <br />
+    <h3><b>Mendapatkan Blok-Blok untuk Digunakan dalam Projekmu</b></h3>
+    <p>Kamu dapat mengimpor blok-blok yang disajikan di sini sebagai sebuah proyek atau mengunduhnya sebagai perpustakaan untuk diimpor ke dalam proyek-proyek kamu.</p>
+    <p><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=seeing&editMode ">KLIK DISINI!!!</a></p>
+    <br />
+    <h3><b>Belajar tentang Machine Learning</b></h3>
+    <p>Ayo kita belajar <i>course</i> lain yaitu Machine Learning</p>
+    <br />
+    <h3><strong>Quiz</strong></h3>
+    <p>[Quiz Placeholder]</p>
+  </body>
+</html>
